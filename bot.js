@@ -6,7 +6,7 @@ client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
 client.on('ready', () => {
-    client.user.setGame(`Welcome On GoldSA Server`, "http://twitch.tv/Streammingg")    
+    client.user.setGame(`Fuck GOLDSA Server`, "http://twitch.tv/Streammingg")    
 });
 
 client.on('message',message =>{
