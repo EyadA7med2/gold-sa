@@ -5,13 +5,13 @@ const Canvas = require("canvas");
 const jimp = require("jimp");
    let points = {}
    
-const prefix = '!'
+const prefix = 'v!'
   client.on('message', message => {
     if(message.author.bot) return;
             if (!points[message.author.id]) points[message.author.id] = {
              points: 0,id: message.author.id
            };
-              if (message.content.startsWith(prefix + 'fkk')) {
+              if (message.content.startsWith(prefix + 'فكك')) {
                 if(!message.channel.guild) return message.reply('**هذا الأمر للسيرفرات فقط**').then(m => m.delete(3000));
 
               const type = require('./fkk.json');
@@ -90,7 +90,7 @@ client.on('message', message => {
 	 if(message.author.bot) return;
   if (!points[message.author.id]) points[message.author.id] = {
              points: 0,id: message.author.id
-           };if (message.content.startsWith(prefix + 'puzzel')) {
+           };if (message.content.startsWith(prefix + 'لغز')) {
 	if(!message.channel.guild) return message.reply('**هذا الأمر للسيرفرات فقط**').then(m => m.delete(3000));
 
 const type = require('./quiz.json');
@@ -165,7 +165,7 @@ client.on('message', message => {
      if (!points[message.author.id]) points[message.author.id] = {
              points: 0,id: message.author.id
            };
-    if (message.content.startsWith(prefix+ 'rkb')) {
+    if (message.content.startsWith(prefix+ 'ركب')) {
       if(!message.channel.guild) return message.reply('**هذا الأمر للسيرفرات فقط**').then(m => m.delete(3000));
     
     const type = require('./rkb.json');
@@ -245,7 +245,7 @@ client.on('message', message => {
        if (!points[message.author.id]) points[message.author.id] = {
              points: 0,id: message.author.id
            };
-      if (message.content.startsWith(prefix + 'write')) {
+      if (message.content.startsWith(prefix + 'كتابه')) {
         if(!message.channel.guild) return message.reply('**هذا الأمر للسيرفرات فقط**').then(m => m.delete(3000));
       
       const type = require('./type.json');
@@ -323,7 +323,7 @@ message.channel.sendFile(canvas.toBuffer());
       if (!points[message.author.id]) points[message.author.id] = {
              points: 0,id: message.author.id
            };
-    if (message.content.startsWith(prefix + 'math')) {
+    if (message.content.startsWith(prefix + 'رياضيات')) {
       if(!message.channel.guild) return message.reply('**هذا الأمر للسيرفرات فقط**').then(m => m.delete(3000));
     
     const type = require('./math.json');
@@ -427,7 +427,7 @@ if (message.content.startsWith(prefix + 'top')) {
 
 client.on('message', message => {
       if(message.author.bot) return;
-if (message.content.startsWith(prefix + 'poit')) {
+if (message.content.startsWith(prefix + 'نقاطي')) {
 	if(!message.channel.guild) return message.reply('**هذا الأمر للسيرفرات فقط**').then(m => m.delete(3000));
 	let userData = points[message.author.id];
 	let embed = new Discord.RichEmbed()
@@ -452,7 +452,7 @@ message.channel.sendEmbed(embed)
 
 
 client.on("message", message => {
- if (message.content === "!help") {
+ if (message.content === "v!help") {
         message.react("✅")
            message.react("📬")
   const embed = new Discord.RichEmbed() 
@@ -460,16 +460,17 @@ client.on("message", message => {
      .setDescription(`
 ══════════ஜ۩۞۩ஜ════════════  
      🎮「العاب」🎮
-   🎮!fkk
-   🎮!puzzle
-   🎮!write
-   🎮!math
-   🎮!rkb
-   🎮!xo
-   🎮!point
-   🎮!top
+   🎮v!فكك
+   🎮v!لغز
+   🎮v!كتابه
+   🎮v!رياضيات
+   🎮v!ركب
+   🎮v!xo
+   🎮v!نقاطي
+   🎮v!top
 ══════════ஜ۩۞۩ஜ════════════ 
  `)
+ .setFooter(`by :Mrkayan`)
    message.channel.sendEmbed(embed)
    
    }
@@ -581,7 +582,7 @@ reaction3.on("collect", r => {
 });
 const devs = ["378909031672184844"]
 
-const adminprefix = "-";
+const adminprefix = "v!";
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
       if (!devs.includes(message.author.id)) return;
